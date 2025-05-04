@@ -20,5 +20,7 @@ Route::get('/services', function () {
     return view('services');
 })->name('services');
 
+Route::resource('features', \App\Http\Controllers\FeatureController::class);
+
 // Auth Routes
 Auth::routes();
